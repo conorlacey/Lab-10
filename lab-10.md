@@ -112,3 +112,28 @@ score = 3.91 + 0.07(bty_avg)
 Male
 
 ### Exercise 7
+
+``` r
+evals %>% ggplot (aes(x = bty_avg, y = score, color = gender)) + 
+  geom_smooth(method = lm, se = FALSE, fullrange = TRUE)
+```
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+![](lab-10_files/figure-gfm/male%20and%20female%20score~bty_avg-1.png)<!-- -->
+
+Males typically have a stronger relationship between bty_avg and scores
+than females.
+
+### Exercise 8
+
+The adjusted R^2 value for m_bty is smaller than m_bty_gen. The gender
+variable helps by explaining more variance in the scores when we already
+have information on the beauty score of the professor.
+
+### Exercise 9
+
+The addition of gender didn’t really change the bty_avg slope between
+m_bty and m_bty_gen.
+
+### Exercise 10
