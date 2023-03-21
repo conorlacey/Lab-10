@@ -22,7 +22,7 @@ summary(m_bty)
 
 The linear model is: 
 
-score = 3.88 + 0.07*bty_avg
+score = 3.88 + 0.07(bty_avg)
 
 The R^2 value is: 
 
@@ -34,6 +34,19 @@ The Adjusted R^2 is:
 
 ### Exercise 2
 
-...
+```{r m_bty_gen}
+m_bty_gen <- lm(evals$score~evals$bty_avg+evals$gender)
+summary(m_bty_gen)
+```
 
-Add exercise headings as needed.
+The linear model is: 
+
+score = 3.74 + 0.07(bty_avg) + 0.17(gender)
+
+The R^2 value is: 
+
+0.06
+
+The Adjusted R^2 is: 
+
+0.06
