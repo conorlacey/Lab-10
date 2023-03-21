@@ -1,21 +1,53 @@
 Lab 10 - Grading the professor, Pt. 2
 ================
-Insert your name here
-Insert date here
+Conor Lacey
+03/21/2023
 
 ### Load packages and data
 
 ``` r
-library(tidyverse) 
-library(tidymodels)
-library(openintro)
+suppressWarnings(library(tidyverse))
+suppressWarnings(library(tidymodels))
+suppressWarnings(library(openintro))
 ```
 
 ### Exercise 1
 
-Remove this text, and add your answer for Exercise 1 here. Add code
-chunks as needed. Don’t forget to label your code chunk. Do not use
-spaces in code chunk labels.
+``` r
+m_bty <- lm(evals$score~evals$bty_avg)
+summary(m_bty)
+```
+
+    ## 
+    ## Call:
+    ## lm(formula = evals$score ~ evals$bty_avg)
+    ## 
+    ## Residuals:
+    ##     Min      1Q  Median      3Q     Max 
+    ## -1.9246 -0.3690  0.1420  0.3977  0.9309 
+    ## 
+    ## Coefficients:
+    ##               Estimate Std. Error t value Pr(>|t|)    
+    ## (Intercept)    3.88034    0.07614   50.96  < 2e-16 ***
+    ## evals$bty_avg  0.06664    0.01629    4.09 5.08e-05 ***
+    ## ---
+    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+    ## 
+    ## Residual standard error: 0.5348 on 461 degrees of freedom
+    ## Multiple R-squared:  0.03502,    Adjusted R-squared:  0.03293 
+    ## F-statistic: 16.73 on 1 and 461 DF,  p-value: 5.083e-05
+
+The linear model is:
+
+score = 3.88 + 0.07\*bty_avg
+
+The R^2 value is:
+
+0.035
+
+The Adjusted R^2 is:
+
+0.033
 
 ### Exercise 2
 

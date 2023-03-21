@@ -15,10 +15,22 @@ suppressWarnings(library(openintro))
 
 ### Exercise 1
 
-Remove this text, and add your answer for Exercise 1 here.
-Add code chunks as needed.
-Don't forget to label your code chunk.
-Do not use spaces in code chunk labels.
+```{r m_bty}
+m_bty <- lm(evals$score~evals$bty_avg)
+summary(m_bty)
+```
+
+The linear model is: 
+
+score = 3.88 + 0.07*bty_avg
+
+The R^2 value is: 
+
+0.035
+
+The Adjusted R^2 is: 
+
+0.033
 
 ### Exercise 2
 
