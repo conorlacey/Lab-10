@@ -61,3 +61,15 @@ Looking at m_bty_gen, we can notice a few things. The intercept indicates the pr
 5.9% iof the variability in score can be explained by the m_bty_gen model.
 
 ### Exercise 5
+
+score = 3.91 + 0.07(bty_avg)
+
+### Exercise 6
+
+Male
+
+### Exercise 7
+
+
+
+
