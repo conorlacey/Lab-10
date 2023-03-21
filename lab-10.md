@@ -104,3 +104,11 @@ increase by 0.17.
 model.
 
 ### Exercise 5
+
+score = 3.91 + 0.07(bty_avg)
+
+### Exercise 6
+
+Male
+
+### Exercise 7
