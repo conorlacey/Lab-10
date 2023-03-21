@@ -87,3 +87,20 @@ The R^2 value is:
 The Adjusted R^2 is:
 
 0.06
+
+### Exercise 3
+
+Looking at m_bty_gen, we can notice a few things. The intercept
+indicates the predicted average evaluation score of female professors
+with an average beauty rating of 0. The bty_avg slope indicates that for
+every 1 point increase in bty_avg a professor’s estimated average
+evaluation score increases by 0.07. The gender slope indicates that if a
+professor is a male, their predicted average evaluation score will
+increase by 0.17.
+
+### Exericse 4
+
+5.9% iof the variability in score can be explained by the m_bty_gen
+model.
+
+### Exercise 5
