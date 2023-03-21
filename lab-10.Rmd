@@ -88,7 +88,15 @@ The addition of gender didn't really change the bty_avg slope between m_bty and 
 
 ### Exercise 10
 
+```{r m_bty_rank}
+m_bty_rank <- lm(evals$score ~ evals$gender + evals$rank)
+summary(m_bty_rank)
+```
 
+The linear model is: 
 
+score = 4.2 + .17(gender) + -0.1(tenure_tack) + -.17(tenured)
 
+Looking at m_bty_rank, we can notice a few things. The intercept indicates the predicted average evaluation score of female teaching professors. The gender slope indicates professor's average evaluation score increases by .17 if they are male. The tenure_track slope indicates that tenure_track professors decrease in their predicted average evaluation score by -.1. The tenured slope indicates that tenured professors decrease in their predicated average evaluation score by -.17.
 
+###
