@@ -126,4 +126,17 @@ summary(m_allvars)
 detach(evals)
 ```
 
+### Exercise 15 
+
+```{r backwards selection}
+attach(evals)
+m_allvars <- lm(score ~ ethnicity + gender + language + age + cls_did_eval +
+                  cls_students + cls_credits + bty_avg) 
+summary(m_allvars)
+detach(evals)
+```
+
+The linear model is: 
+
+score = 3.83 + non_minority(.17) + male(.19) + non-English(-.17) + age(-.005) + cls_did_eval(0.007) + cls_students(-0.004) + credit(0.54) + bty_avg(0.066)
 

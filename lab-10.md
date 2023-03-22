@@ -264,3 +264,49 @@ summary(m_allvars)
 ``` r
 detach(evals)
 ```
+
+### Exercise 15
+
+``` r
+attach(evals)
+m_allvars <- lm(score ~ ethnicity + gender + language + age + cls_did_eval +
+                  cls_students + cls_credits + bty_avg) 
+summary(m_allvars)
+```
+
+    ## 
+    ## Call:
+    ## lm(formula = score ~ ethnicity + gender + language + age + cls_did_eval + 
+    ##     cls_students + cls_credits + bty_avg)
+    ## 
+    ## Residuals:
+    ##      Min       1Q   Median       3Q      Max 
+    ## -1.84932 -0.31610  0.06814  0.37118  0.94225 
+    ## 
+    ## Coefficients:
+    ##                        Estimate Std. Error t value Pr(>|t|)    
+    ## (Intercept)            3.827108   0.172412  22.197  < 2e-16 ***
+    ## ethnicitynot minority  0.174664   0.074734   2.337 0.019866 *  
+    ## gendermale             0.186761   0.050638   3.688 0.000253 ***
+    ## languagenon-english   -0.169595   0.103940  -1.632 0.103442    
+    ## age                   -0.005222   0.002616  -1.996 0.046521 *  
+    ## cls_did_eval           0.007057   0.002257   3.127 0.001878 ** 
+    ## cls_students          -0.004164   0.001353  -3.078 0.002212 ** 
+    ## cls_creditsone credit  0.540358   0.105292   5.132 4.26e-07 ***
+    ## bty_avg                0.066005   0.016483   4.004 7.26e-05 ***
+    ## ---
+    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+    ## 
+    ## Residual standard error: 0.505 on 454 degrees of freedom
+    ## Multiple R-squared:  0.1526, Adjusted R-squared:  0.1377 
+    ## F-statistic: 10.22 on 8 and 454 DF,  p-value: 3.622e-13
+
+``` r
+detach(evals)
+```
+
+The linear model is:
+
+score = 3.83 + non_minority(.17) + male(.19) + non-English(-.17) +
+age(-.005) + cls_did_eval(0.007) + cls_students(-0.004) + credit(0.54) +
+bty_avg(0.066)
