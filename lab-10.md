@@ -323,4 +323,8 @@ in their predicted average evaluation score.
 
 ### Exercise 17
 
-### Exercise 17
+A young attractive male professor that is part of a non-minority group
+teaching a small one-credit class is expected to receive a high average
+evaluation score.
+
+### Exercise 18
