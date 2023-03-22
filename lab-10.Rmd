@@ -140,3 +140,13 @@ The linear model is:
 
 score = 3.83 + non_minority(.17) + male(.19) + non-English(-.17) + age(-.005) + cls_did_eval(0.007) + cls_students(-0.004) + credit(0.54) + bty_avg(0.066)
 
+### Exercise 16 
+
+Looking at the non_minority slope, this slope indicates that individuals who are not a minority received a .17 increase in their predicted average evaluation score. 
+
+Looking at the bty_avg slope, this slope indicates that for every 1 point increase in a professors beauty average there is a 0.066 increase in their predicted average evaluation score.
+
+### Exercise 17 
+
+### Exercise 17 
+
