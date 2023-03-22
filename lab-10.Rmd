@@ -99,4 +99,31 @@ score = 4.2 + .17(gender) + -0.1(tenure_tack) + -.17(tenured)
 
 Looking at m_bty_rank, we can notice a few things. The intercept indicates the predicted average evaluation score of female teaching professors. The gender slope indicates professor's average evaluation score increases by .17 if they are male. The tenure_track slope indicates that tenure_track professors decrease in their predicted average evaluation score by -.1. The tenured slope indicates that tenured professors decrease in their predicated average evaluation score by -.17.
 
-###
+### Exercise 11
+
+Total number of students in the class. I can't think of any reason why number of students would be related to evaluation scores.
+
+### Exercise 12
+
+```{r m_cls_students}
+m_cls_students <- lm(evals$score ~ evals$cls_students)
+summary(m_cls_students)
+```
+
+Haha! I was right. 
+
+### Exercise 13 
+
+cls_perc_eval should not be included. cls_did_eval is essentially the same variable except it is not in percent form, it is instead a count of students who completed the evaluation. However, using a count versus using a percent seems arbitrary for linear models considering they are both describing the magnitude of students who completed the evaluation. As a result, I think we can take this one out because it would be doing the same thing as cls_did_eval.
+
+### Exercise 14
+
+```{r m_allvars}
+attach(evals)
+m_allvars <- lm(score ~ rank + ethnicity + gender + language + age +cls_did_eval +
+                  cls_students + cls_level + cls_profs + cls_credits + bty_avg) 
+summary(m_allvars)
+detach(evals)
+```
+
+
