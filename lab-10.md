@@ -328,3 +328,14 @@ teaching a small one-credit class is expected to receive a high average
 evaluation score.
 
 ### Exercise 18
+
+I do believe this model is generalizable to other universities in the
+United States. I can’t think of a reason why the University of Texas at
+Austin would be any different from other American universities.
+
+With that said, I do not think the model is generalizable to
+universities outside the United States. I say this because the
+non-English slope will change if you are in a non-English speaking
+country with non-English universities. It’s possible, if this were the
+case, that the non-English coefficient would flip completely to be
+positive.
